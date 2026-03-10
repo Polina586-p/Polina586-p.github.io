@@ -31,12 +31,14 @@
 		Атрибут <code>sizes</code> задаёт размеры изображения для разных макетов страницы. 
 		Атрибут <code>srcset</code> задаёт путь к графическим файлам с учётом размера изображения и устройств.
 		<img src="https://raw.githubusercontent.com/Polina586-p/Polina586-p.github.io/11d08addfe332a906e1c5f284fb8f220075532bc/lab1/images/images/html5-logo.svg"
-		alt="HTML5 Logo"
-		sizes="https://raw.githubusercontent.com/Polina586-p/Polina586-p.github.io/11d08addfe332a906e1c5f284fb8f220075532bc/lab1/images/images/html5-logo/3000*1500.svg 3000w",
-		"https://raw.githubusercontent.com/Polina586-p/Polina586-p.github.io/11d08addfe332a906e1c5f284fb8f220075532bc/lab1/images/images/html5-logo/2000*1000.svg 2000w",
-		"https://raw.githubusercontent.com/Polina586-p/Polina586-p.github.io/11d08addfe332a906e1c5f284fb8f220075532bc/lab1/images/images/html5-logo/1000*500.svg 1000w",
-		"https://raw.githubusercontent.com/Polina586-p/Polina586-p.github.io/11d08addfe332a906e1c5f284fb8f220075532bc/lab1/images/images/html5-logo/600*300.svg 600w",
-		"https://raw.githubusercontent.com/Polina586-p/Polina586-p.github.io/11d08addfe332a906e1c5f284fb8f220075532bc/lab1/images/images/html5-logo/300*100.svg 300w">
+		alt="Гриб"
+		srcset="https://raw.githubusercontent.com/Polina586-p/Polina586-p.github.io/refs/heads/main/lab1/images/images/mushroom_retina.jpg 400w,
+		https://raw.githubusercontent.com/Polina586-p/Polina586-p.github.io/refs/heads/main/lab1/images/images/mushroom_portrait.jpg 300w,"
+		sizes=""
+		>sizes="(max-width: 350px) 150px, 
+            (max-width: 600px) 300px,
+            (max-width: 1400px) 500px,
+            1000px"
 		<h2>Подпись к изображению</h2>
 		<p>Для группирования любых элементов, например, изображений и подписей к ним используется элемент <code>figure</code>.
 		Он не должен быть связан непосредственно с основным содержимым документа и при его перемещении в другое место смысл текста не должен меняться. 
