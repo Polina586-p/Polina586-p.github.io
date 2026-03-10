@@ -10,13 +10,19 @@
 		<h2>Элемент <code>img</code></h2>
 
 		<p>Элемент <code>img</code> внедряет изображение в текущий документ в месте определения элемента. Элемент <code>img</code> не имеет содержимого — он замещается на ходу изображением, указанным в атрибуте <code>src</code>.</p>
-
-		<img src="https://raw.githubusercontent.com/Polina586-p/Polina586-p.github.io/refs/heads/main/lab1/images/images/aquaria.jpg" title="Черепаха">
+		<figure>
+			<img src="https://raw.githubusercontent.com/Polina586-p/Polina586-p.github.io/refs/heads/main/lab1/images/images/aquaria.jpg" alt="aquaria.jpg">
+			<figcaption>Черепаха</figcaption>
+		</figure>
 
 		<h2>Альтернативный текст</h2>
 		<p>Атрибут <code>alt</code> предоставляет краткое описание изображения. Он содержит альтернативный текст, который отображается, если изображение не может быть выведено. Пользовательские агенты должны отображать альтернативный текст, если они не поддерживают изображения, или сконфигурированы так, чтобы не показывать изображения (отключен показ изображений).</p>
-        <p><img src="https://raw.githubusercontent.com/Polina586-p/Polina586-p.github.io/refs/heads/main/lab1/images/images/globus.gif" alt="globus.gif"></p>
-		<p><img src="lab1/images/images/globus.gif" alt="globus.gif"></p>	
+        <figure>
+			<p><img src="https://raw.githubusercontent.com/Polina586-p/Polina586-p.github.io/refs/heads/main/lab1/images/images/globus.gif" alt="globus.gif"></p>
+			<p><img src="lab1/images/images/globus.gif" alt="globus.gif"></p>
+			<figcaption>Глобус</figcaption>
+		</figure>
+			
 		<h2>Размеры изображения</h2>
 		<p>Атрибуты <code>width</code> и <code>height</code> задают размеры области изображения. Если оба атрибута не заданы, размер изображения будет определен после его полной загрузки, после чего размеры области будут изменены для размещения содержания картинки.
 		Если задан только один из атрибутов, второй размер будет высчитан в соответствие с пропорциями изображения и заданным атрибутом.
