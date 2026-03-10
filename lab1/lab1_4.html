@@ -21,15 +21,20 @@
 		<p>Атрибуты <code>width</code> и <code>height</code> задают размеры области изображения. Если оба атрибута не заданы, размер изображения будет определен после его полной загрузки, после чего размеры области будут изменены для размещения содержания картинки.
 		Если задан только один из атрибутов, второй размер будет высчитан в соответствие с пропорциями изображения и заданным атрибутом.
 		При указании обоих атрибутов ПА «впишет» изображение в область с указанными размерами.</p>
-		<img src="https://raw.githubusercontent.com/Polina586-p/Polina586-p.github.io/refs/heads/main/lab1/images/images/html5-logo.png" alt="html5-logo.png">
-		<img src="https://raw.githubusercontent.com/Polina586-p/Polina586-p.github.io/refs/heads/main/lab1/images/images/html5-logo.png" alt="html5-logo.png" width="150" height="150">
-		<img src="https://raw.githubusercontent.com/Polina586-p/Polina586-p.github.io/refs/heads/main/lab1/images/images/html5-logo.png" alt="html5-logo.png" width="175" >
-		<img src="https://raw.githubusercontent.com/Polina586-p/Polina586-p.github.io/refs/heads/main/lab1/images/images/html5-logo.png" alt="html5-logo.png" height="200">
+		<figure>
+			<img src="https://raw.githubusercontent.com/Polina586-p/Polina586-p.github.io/refs/heads/main/lab1/images/images/html5-logo.png" alt="html5-logo.png">
+			<img src="https://raw.githubusercontent.com/Polina586-p/Polina586-p.github.io/refs/heads/main/lab1/images/images/html5-logo.png" alt="html5-logo.png" width="150" height="150">
+			<img src="https://raw.githubusercontent.com/Polina586-p/Polina586-p.github.io/refs/heads/main/lab1/images/images/html5-logo.png" alt="html5-logo.png" width="175" >
+			<img src="https://raw.githubusercontent.com/Polina586-p/Polina586-p.github.io/refs/heads/main/lab1/images/images/html5-logo.png" alt="html5-logo.png" height="200">
+		<figcaption>HTML5 Logo</figcaption>
+		</figure>
+		
 		<p>Для добавления гибких (responsive) изображений (таких, 
 		которые отображаются хорошо на устройствах с сильно отличающимися размерами экрана, разрешением, и другими характеристиками)
 		используют атрибуты <code>sizes</code> и  <code>srcset</code>.
 		Атрибут <code>sizes</code> задаёт размеры изображения для разных макетов страницы. 
 		Атрибут <code>srcset</code> задаёт путь к графическим файлам с учётом размера изображения и устройств.
+		<figure>
 		<img alt="mushroom.jpg"
 		srcset="https://raw.githubusercontent.com/Polina586-p/Polina586-p.github.io/refs/heads/main/lab1/images/images/mushroom_retina.jpg 600w,
 		https://raw.githubusercontent.com/Polina586-p/Polina586-p.github.io/refs/heads/main/lab1/images/images/mushroom_portrait.jpg 400w,"
@@ -37,6 +42,8 @@
             (max-width: 600px) 300px,
             (max-width: 1400px) 500px,
             1000px">
+		<figcaption>Гриб</figcaption>	
+		</figure>
 		<h2>Подпись к изображению</h2>
 		<p>Для группирования любых элементов, например, изображений и подписей к ним используется элемент <code>figure</code>.
 		Он не должен быть связан непосредственно с основным содержимым документа и при его перемещении в другое место смысл текста не должен меняться. 
@@ -47,7 +54,6 @@
 			alt="redcat.jpg">
 			<figcaption>Рыжий кот</figcaption>
 		</figure>
-
 		<h2>Элемент picture</h2>
 		<p>
 		HTML-элемент <code>picture</code> служит контейнером для одного или более элементов 
