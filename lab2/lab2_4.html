@@ -24,24 +24,23 @@
 			<figcaption>Видео от Физико-математический ф-т ОГУ им. И.С. Тургенева</figcaption>
 		</figure> 
 		<figure>
-			<iframe src="https://yandex.ru/maps/org/orlovskiy_gosudarstvenny_universitet_imeni_i_s_turgeneva/1030860442/?from=api-maps&ll=36.063909%2C52.951255&utm_source=api-maps&z=17" width="100%" height="350"></iframe>
-			<figcaption>Орловский государственный университет имени И.С.Тургенева</figcaption>
+			<iframe src="https://yandex.ru/maps/org/orlovskiy_gosudarstvenny_universitet_imeni_i_s_turgeneva/1030860442/?from=api-maps&ll=36.063909%2C52.951255&utm_source=api-maps&z=17" width="640" height="360"></iframe>
+			<figcaption>Орловский государственный университет имени И.С.Тургенева на карте</figcaption>
 		</figure>
 
 
 	<h2>Демонстрация добавления на страницу видео</h2>
-<!-- 
-1. Скачайте видеоролик https://fedyaevys.ru/html&css/lab2/oreluniver.mp4
-2. С помощью элемента video добавьте на страницу  видеоплеер с элементами управления, который воспроизводит скачанное видео.
-3. Добавьте к видео обложку (последний кадр видео).
- -->
+		<figure>
+			<video src="/lab2/oreluniver.mp4" controls width="640" height="360" poster="/lab2/poster.png"></video>
+		</figure>
 
  	<h2>Демонстрация добавления на страницу аудио</h2>
-<!-- 
- 1. Скачайте аудиофайлы https://fedyaevys.ru/html&css/lab2/yuriy-gagarin-poehali.mp3 и https://fedyaevys.ru/html&css/lab2/yuriy-gagarin-poehali.ogg
- 2. С помощью элемента audio добавьте на страницу  аудиоплеер с элементами управления, который воспроизводит скачанные аудио
- 3. Используйте тег <source> для добавления нескольких форматов одного и того же файла на случай, если какой-то из них не будет поддерживаться браузером
-  -->
+		<figure>
+			<audio controls>
+				<source src="/lab2/yuriy-gagarin-poehali.mp3" type="audio/mp3">
+				<source src="/lab2/yuriy-gagarin-poehali.ogg" type="audio/ogg">
+			</audio>
+		</figure>
 
 </body>
 </html>
