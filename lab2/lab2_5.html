@@ -2,13 +2,129 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Форма</title>
+    <title>Форма регистрации</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            width: 500px;
+            border: 1px solid #ccc;
+        }
+        h1 {
+            font-size: 24px;
+            margin-top: 0;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 5px;
+            vertical-align: top;
+        }
+        .label-cell {
+            width: 120px;
+        }
+        input[type="email"], 
+        input[type="password"], 
+        textarea, 
+        select {
+            width: 200px;
+            padding: 3px;
+            border: 1px solid #ccc;
+        }
+        textarea {
+            height: 100px;
+        }
+        .checkbox-group label {
+            display: block;
+            margin-bottom: 2px;
+        }
+        .buttons {
+            margin-top: 15px;
+        }
+    </style>
 </head>
 <body>
-    <form>
-        <h1>Форма регистрации пользователя</h1>
 
+<div class="form-container">
+    <h1>Форма регистрации пользователя</h1>
+
+    <!-- Условие: метод передачи post -->
+    <form action="#" method="post">
+        <table>
+            <!-- Поле E-mail: проверка корректности (type="email") и обязательное (required) -->
+            <tr>
+                <td class="label-cell"><label for="email">E-mail</label></td>
+                <td><input type="email" id="email" name="email" placeholder="Введите e-mail" required></td>
+            </tr>
+
+            <!-- Поле Пароль: обязательное (required) -->
+            <tr>
+                <td class="label-cell"><label for="pass">Пароль</label></td>
+                <td><input type="password" id="pass" name="pass" placeholder="Введите пароль" required></td>
+            </tr>
+
+            <!-- Радиокнопки: кликабельные через <label> -->
+            <tr>
+                <td class="label-cell">Пол</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="m" checked>
+                    <label for="male">Мужчина</label>
+                    <input type="radio" id="female" name="gender" value="f">
+                    <label for="female">Женщина</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label-cell">Год рождения</td>
+                <td>
+                    <select name="year">
+
+                        <option value="1981">1981</option>
+                        <option value="1982">1982</option>
+                        <option value="1983">1983</option>
+                    </select>
+                    -й
+                </td>
+            </tr>
+
+            <!-- Чекбоксы: кликабельные. Русский — отмечен и недоступен (checked disabled) -->
+            <tr>
+                <td class="label-cell">Я знаю</td>
+                <td class="checkbox-group">
+                    <label><input type="checkbox" name="lang" value="ru" checked disabled> Русский</label>
+                    <label><input type="checkbox" name="lang" id="es" value="es"> <label for="es">Испанский</label></label>
+                    <label><input type="checkbox" name="lang" id="de" value="de"> <label for="de">Немецкий</label></label>
+                    <label><input type="checkbox" name="lang" id="en" value="en"> <label for="en">Английский</label></label>
+                    <label><input type="checkbox" name="lang" id="zh" value="zh"> <label for="zh">Китайский</label></label>
+                </td>
+            </tr>
+
+            <!-- Текстовая область с плейсхолдером -->
+
+
+<tr>
+                <td class="label-cell">Обо мне</td>
+                <td>
+                    <textarea name="about" placeholder="Напишите коротко о себе"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td class="buttons">
+                    <input type="submit" value="Готово">
+                    <input type="reset" value="Очистить">
+                </td>
+            </tr>
+        </table>
     </form>
+</div>
+
 </body>
 </html>
