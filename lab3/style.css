@@ -1,5 +1,6 @@
-@import "reset.css";
 @import "bootstrap-reboot.css";
+@import "reset.css";
+
 body{
     background-color: black;
     color: white;    
