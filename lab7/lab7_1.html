@@ -115,8 +115,8 @@
         <div class="col-sm-6">
           <div class="thumbnail" style="padding: 15px; border: 1px solid #ddd;">
             <div class="caption text-center">
-              <h3><i class="fa fa-desktop fa-2x" style="color:#337ab7;"></i></h3>
-              <h4>Frontend-разработка</h4>
+              <i class="fa fa-desktop fa-2x" style="color:#337ab7;"></i>
+              <h3>Frontend-разработка</h3>
               <p>Создание современных сайтов и веб-страниц с использованием HTML, CSS и JavaScript. Работа с отзывчивым дизайном.</p>
             </div>
           </div>
@@ -124,8 +124,8 @@
         <div class="col-sm-6">
           <div class="thumbnail" style="padding: 15px; border: 1px solid #ddd;">
             <div class="caption text-center">
-              <h3><i class="fa fa-gears fa-2x" style="color:#5cb85c;"></i></h3>
-              <h4>Алгоритмы на Python</h4>
+              <i class="fa fa-gears fa-2x" style="color:#5cb85c;"></i>
+              <h3>Алгоритмы на Python</h3>
               <p>Разработка консольных утилит, решение алгоритмических задач и парсинг данных для учебных и личных проектов.</p>
             </div>
           </div>
