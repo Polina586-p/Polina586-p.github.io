@@ -134,7 +134,7 @@
     </div>
   </div>
   
-  <!-- Подвал сайта -->
+
   <footer style="background-color: #222; color: #fff; padding: 30px 0; margin-top: 50px;">
     <div class="container text-center">
       <p>&copy; 2026 Журавлева Полина. Все права защищены.</p>
@@ -150,4 +150,5 @@
 </body>
 </html>
 
+       
        
